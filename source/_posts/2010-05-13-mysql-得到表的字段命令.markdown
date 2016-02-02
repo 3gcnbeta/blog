@@ -1,0 +1,24 @@
+---
+layout: post
+status: publish
+published: true
+title: Mysql 得到表的字段命令
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1005
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1005
+categories:
+- Mysql
+tags: []
+comments: []
+---
+<div id="_mcePaste">1. show columns from table</div></p>
+<div>
+<div>2. mysql_fetch_field</div></p>
+<div>3. desc table</div><br />
+</div></p>

@@ -1,0 +1,42 @@
+---
+layout: post
+status: publish
+published: true
+title: Ubuntu 9.04 多媒体安装
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 259
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=259
+categories:
+- Ubuntu
+tags:
+- Ubuntu
+- 多媒体
+comments: []
+---
+<p>英文官方说明：</p>
+<p>https://help.ubuntu.com/community/Medibuntu</p>
+<p>对于各个版本选择下面的安装源：</p>
+<p>所有的Ubuntu 版本与钥匙环:</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/`lsb_release -cs`.list --output-document=/etc/apt/sources.list.d/medibuntu.list && sudo apt-get -q update && sudo apt-get --yes -q --allow-unauthenticated install medibuntu-keyring && sudo apt-get -q update<br />
+Ubuntu 9.04 "Jaunty Jackalope":</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/jaunty.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
+Ubuntu 8.10 "Intrepid Ibex":</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/intrepid.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
+Ubuntu 8.04 "Hardy Heron":</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/hardy.list --output-document=/etc/apt/sources.list.d/medibuntu.list<br />
+Ubuntu 6.06 "Dapper Drake":</p>
+<p>sudo wget http://www.medibuntu.org/sources.list.d/dapper.list --output-document=/etc/apt/sources.list.d/medibuntu.list</p>
+<p>安装GPG密匙：<br />
+sudo apt-get update && sudo apt-get install medibuntu-keyring && sudo apt-get update<br />
+安装解码器：<br />
+对于i386, 包名是w32codecs:</p>
+<p>sudo apt-get install w32codecs<br />
+对于amd64, 包名是w64codecs:</p>
+<p>sudo apt-get install w64codecs<br />
+这样你就可以在Ubuntu下面使用Windows下面的多媒体解码器了。</p>

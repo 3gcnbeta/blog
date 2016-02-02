@@ -1,0 +1,33 @@
+---
+layout: post
+status: publish
+published: true
+title: MIME是什么的缩写？
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1020
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1020
+categories:
+- WEB开发
+tags:
+- MIME
+comments: []
+---
+<p><em><strong>MIME是M</strong>ultipurpose&nbsp;<strong>I</strong>nternet&nbsp;<strong>M</strong>ail&nbsp;<strong>E</strong>xtensions的缩写。</em></p>
+<p>wiki上的字条:</p>
+<p><strong>Multipurpose Internet Mail Extensions</strong> (<strong>MIME</strong>) is an&nbsp;<a title="Internet standard" href="http://en.wikipedia.org/wiki/Internet_standard">Internet standard</a> that extends the format of&nbsp;<a title="Electronic mail" href="http://en.wikipedia.org/wiki/Electronic_mail">e-mail</a> to support:</p>
+<ul>
+<li>Text in&nbsp;<a title="Character set" href="http://en.wikipedia.org/wiki/Character_set">character sets</a> other than&nbsp;<a title="ASCII" href="http://en.wikipedia.org/wiki/ASCII">ASCII</a></li>
+<li>Non-text attachments</li>
+<li>Message bodies with multiple parts</li>
+<li>Header information in non-ASCII character sets</li><br />
+</ul><br />
+MIME's use, however, has grown beyond describing the content of&nbsp;<a title="Electronic mail" href="http://en.wikipedia.org/wiki/Electronic_mail">e-mail</a> to describing content type in general, including for the web (see&nbsp;<a title="Internet media type" href="http://en.wikipedia.org/wiki/Internet_media_type">Internet media type</a>).</p>
+<p>Virtually all human-written&nbsp;<a title="Internet" href="http://en.wikipedia.org/wiki/Internet">Internet</a> e-mail and a fairly large proportion of automated e-mail is transmitted via&nbsp;<a title="Simple Mail Transfer Protocol" href="http://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol">SMTP</a>in MIME format. Internet e-mail is so closely associated with the SMTP and MIME standards that it is sometimes called<strong>SMTP/MIME</strong> e-mail.<sup><a href="http://en.wikipedia.org/wiki/MIME#cite_note-0">[1]</a></sup></p>
+<p>The content types defined by MIME standards are also of importance outside of e-mail, such as in&nbsp;<a title="Protocol (computing)" href="http://en.wikipedia.org/wiki/Protocol_(computing)">communication protocols</a> like&nbsp;<a title="HyperText Transfer Protocol" href="http://en.wikipedia.org/wiki/HyperText_Transfer_Protocol">HTTP</a> for the&nbsp;<a title="World Wide Web" href="http://en.wikipedia.org/wiki/World_Wide_Web">World Wide Web</a>. HTTP requires that data be transmitted in the context of e-mail-like messages, although the data most often is not actually e-mail.</p>
+<p>MIME is specified in six linked&nbsp;<a title="Request for Comments" href="http://en.wikipedia.org/wiki/Request_for_Comments">RFC memoranda</a>:&nbsp;<a href="http://tools.ietf.org/html/rfc2045">RFC 2045</a>,&nbsp;<a href="http://tools.ietf.org/html/rfc2046">RFC 2046</a>,&nbsp;<a href="http://tools.ietf.org/html/rfc2047">RFC 2047</a>,&nbsp;<a href="http://tools.ietf.org/html/rfc4288">RFC 4288</a>,&nbsp;<a href="http://tools.ietf.org/html/rfc4289">RFC 4289</a> and&nbsp;<a href="http://tools.ietf.org/html/rfc2049">RFC 2049</a>, which together define the specifications.</p>

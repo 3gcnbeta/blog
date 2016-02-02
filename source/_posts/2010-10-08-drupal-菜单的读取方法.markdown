@@ -1,0 +1,71 @@
+---
+layout: post
+status: publish
+published: true
+title: Drupal 菜单的读取方法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1396
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1396
+categories:
+- WEB服务器技术
+- drupal
+tags: []
+comments: []
+---
+<p>1. 通过menu_tree_all_data来读取相应的菜单项<br />
+primary-links来读取基本菜单。<br />
+也可以读取自定义的菜单。<br />
+2. 通过$m['below']来得到是不是有子菜单</p>
+<div id="_mcePaste">
+<ul></div></p>
+<div id="_mcePaste"><?php</div></p>
+<div id="_mcePaste">$i = 0;</div></p>
+<div id="_mcePaste">$menuItems = menu_tree_all_data('primary-links');</div></p>
+<div id="_mcePaste">foreach($menuItems as $key => $m):</div></p>
+<div id="_mcePaste">?></div></p>
+<div id="_mcePaste">
+<li></div></p>
+<div id="_mcePaste"><?php</div></p>
+<div id="_mcePaste">$href = drupal_get_path_alias($m['link']['link_path']);</div></p>
+<div id="_mcePaste">$newhref = $href == '/' ? $href : '/' . $href;</div></p>
+<div id="_mcePaste">$isactive = is_active_menu($newhref);</div></p>
+<div id="_mcePaste">if ($isactive) {</div></p>
+<div id="_mcePaste">print "<a href='" . $dir . $href . "' id='navbar$i' class='hover' onmouseover="showMenu('navbar$i', 'subnav$i')" onFocus="this.blur()"><!--{$m['link']['title']}--></a>";</div></p>
+<div id="_mcePaste">} else {</div></p>
+<div id="_mcePaste">print "<a href='" . $dir . $href . "' id='navbar$i' onmouseover="showMenu('navbar$i', 'subnav$i')" onFocus="this.blur()"><!--{$m['link']['title']}--></a>";</div></p>
+<div id="_mcePaste">}</div></p>
+<div id="_mcePaste">if ($isactive) {</div></p>
+<div id="_mcePaste">$cursubmenu = $m['below'];</div></p>
+<div id="_mcePaste">$cursubmenunode = $m;</div></p>
+<div id="_mcePaste">}</div></p>
+<div id="_mcePaste">if ($m['below']) {</div></p>
+<div id="_mcePaste">?></div></p>
+<div id="_mcePaste">
+<div id="subnav<?php echo $i?>" ></div></p>
+<div id="_mcePaste">
+<p>.</p></div></p>
+<div id="_mcePaste">
+<p></div></p>
+<div id="_mcePaste"><span style="width: 200px"></div></p>
+<div id="_mcePaste"><?php</div></p>
+<div id="_mcePaste">foreach($m['below'] as $k => $v) {</div></p>
+<div id="_mcePaste">$a = $dir . drupal_get_path_alias($v['link']['link_path']);</div></p>
+<div id="_mcePaste">echo "<a href="$a">{$v['link']['title']}</a><br />";</div></p>
+<div id="_mcePaste">}</div></p>
+<div id="_mcePaste">?></div></p>
+<div id="_mcePaste"></span></div></p>
+<div id="_mcePaste"></p></div></p>
+<div id="_mcePaste"></div></div></p>
+<div id="_mcePaste"><?php</div></p>
+<div id="_mcePaste">}</div></p>
+<div id="_mcePaste">$i++;</div></p>
+<div id="_mcePaste">?></div></p>
+<div id="_mcePaste"></li></div></p>
+<div id="_mcePaste"><?php endforeach; ?></div></p>
+<div id="_mcePaste"></ul></div></p>

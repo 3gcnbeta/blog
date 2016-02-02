@@ -1,0 +1,65 @@
+---
+layout: post
+status: publish
+published: true
+title: UBUNTU/Linux 下Netbeans 6.8的中英文文字美化
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 392
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=392
+categories:
+- Ubuntu
+tags:
+- javascript
+- Netbeans
+- 字体
+- 美化
+comments: []
+---
+<p>netbeans因为安装方便，对html/css/javascript的格式化超级强大，运行速度快一直是我的最爱，</p>
+<p>更因为上面的jVi插件非常好用，与项目管理能力非常好让我爱不释手，</p>
+<p>但netbeans的字体一直比较难看，所以我们不得不动手自己来配置。</p>
+<p>下面是我在Ubuntu下对Netbeans 6.8的字体配置的修改方法。</p>
+<p>1）先按下面地址的方法安装好字体。</p>
+<p><a href="http://www.3gcnbeta.com/wordpress/2010/01/26/linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a/" target="_blank">http://www.3gcnbeta.com/wordpress/2010/01/26/linux%e5%b9%b3%e5%8f%b0debian%e7%b3%bb%e4%b8%8bwindows%e5%ad%97%e4%bd%93%e7%9a%84%e6%b7%bb%e5%8a%a0%ef%bc%88debian-4-0-ubuntu-8-04%e5%8f%8a%e4%bb%a5%e4%b8%8a/</a></p>
+<p>2）然后打开/etc/java-6-sun/fontconfig.properties</p>
+<p>sudo vi /etc/java-6-sun/fontconfig.properties</p>
+<p>或者(如果你不熟悉vi)</p>
+<p>sudo gedit /etc/java-6-sun/fontconfig.properties</p>
+<p>3)查找Font File Names,</p>
+<p>将前两行替换成如下的任何一种方式</p>
+<p>a)宋体</p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div>b)文泉译正黑</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div>添加后他们看起来象是下面这样子。</div></p>
+<div id="_mcePaste"># Font File Names</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/windows/Fonts/simsun.ttc</div></p>
+<div id="_mcePaste">#filename.-arphic-ar_pl_shanheisun_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-arphic-ar_pl_uming_uni-medium-r-normal--*-*-*-*-p-*-iso10646-1=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc</div></p>
+<div id="_mcePaste">filename.-baekmuk-batang-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/baekmuk/batang.ttf</div></p>
+<div id="_mcePaste">filename.-un-batang-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnBatang.ttf</div></p>
+<div id="_mcePaste">filename.-un-batang-bold-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnBatangBold.ttf</div></p>
+<div id="_mcePaste">filename.-baekmuk-gulim-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/baekmuk/gulim.ttf</div></p>
+<div id="_mcePaste">filename.-un-dotum-medium-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnDotum.ttf</div></p>
+<div id="_mcePaste">filename.-un-dotum-bold-r-normal--*-%d-*-*-c-*-*-*=/usr/share/fonts/truetype/unfonts/UnDotumBold.ttf</div></p>
+<div id="_mcePaste">filename.-kochi-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/kochi/kochi-gothic.ttf</div></p>
+<div id="_mcePaste">filename.-sazanami-gothic-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/sazanami/sazanami-gothic.ttf</div></p>
+<div id="_mcePaste">filename.-kochi-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/kochi/kochi-mincho.ttf</div></p>
+<div id="_mcePaste">filename.-sazanami-mincho-medium-r-normal--*-%d-*-*-c-*-jisx0208.1983-0=/usr/share/fonts/truetype/sazanami/sazanami-mincho.ttf</div></p>
+<div>4） 然后跑到最后一行，在下面添加如下的语句：</div></p>
+<div id="_mcePaste">#Monospaced font configure</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-r-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/cour.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-r-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/courbd.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-medium-i-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/couri.ttf</div></p>
+<div id="_mcePaste">filename.-b&amp;h-lucidatypewriter-bold-i-normal-sans-*-%d-*-*-m-*-iso8859-1=/usr/share/fonts/truetype/windows/Fonts/courbi.ttf</div></p>
+<div></div></p>
+<div><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-ipbook-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-396" title="Screenshot-ipbook - NetBeans IDE 6.8" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-ipbook-NetBeans-IDE-6.8.png" alt="" width="777" height="585" /></a></div></p>
+<div><a href="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-NetBeans-IDE-6.8.png"><img class="aligncenter size-full wp-image-395" title="Screenshot-NetBeans IDE 6.8" src="http://www.3gcnbeta.com/wordpress/wp-content/uploads/2010/03/Screenshot-NetBeans-IDE-6.8.png" alt="" width="777" height="585" /></a></div></p>

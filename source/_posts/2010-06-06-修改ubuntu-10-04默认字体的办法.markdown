@@ -1,0 +1,114 @@
+---
+layout: post
+status: publish
+published: true
+title: 修改Ubuntu 10.04默认字体的办法
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 1154
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=1154
+categories:
+- Ubuntu
+tags:
+- Ubuntu
+comments: []
+---
+<p>1.首先要将avail里的文件创建软连接到conf.d目录下</p>
+<pre name="code" class="bash">
+cd /etc/fonts/conf.d/<br />
+sudo ln -s ../conf.avail/69-language-selector-zh-cn.conf<br />
+</pre><br />
+2.然后编译这个软连接过来的文件</p>
+<pre name="code" class="bash">
+sudo gedit 69-language-selector-zh-cn.conf<br />
+</pre><br />
+3. 这个时候你就可以根据自己的需要添加或者删除字体配置，<br />
+下面是我的字体配置，<br />
+我在这里重新配置了一下Sans字体：</p>
+<pre name="code" class="xml">
+<?xml version="1.0"?><br />
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd"><br />
+<fontconfig></p>
+<p>	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>Sans</string><br />
+		</test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans</string><br />
+			<string>Bitstream Vera Sans</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>WenQuanYi Bitmap Song</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match> </p>
+<p>	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>serif</string><br />
+		</test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Serif</string><br />
+			<string>Bitstream Vera Serif</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>WenQuanYi Bitmap Song</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match><br />
+	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>sans-serif</string><br />
+		</test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans</string><br />
+			<string>Bitstream Vera Sans</string><br />
+			<string>WenQuanYi Micro Hei</string><br />
+			<string>WenQuanYi Zen Hei</string><br />
+			<string>Droid Sans Fallback</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match><br />
+	<match target="pattern"><br />
+		<test qual="any" name="family"><br />
+			<string>monospace</string><br />
+		</test><br />
+		<edit name="family" mode="prepend" binding="strong"><br />
+			<string>DejaVu Sans Mono</string><br />
+			<string>Bitstream Vera Sans Mono</string><br />
+			<string>WenQuanYi Micro Hei Mono</string><br />
+			<string>WenQuanYi Zen Hei Mono</string><br />
+			<string>Droid Sans Fallback</string><br />
+			<string>HYSong</string><br />
+			<string>AR PL UMing CN</string><br />
+			<string>AR PL UMing HK</string><br />
+			<string>AR PL ShanHeiSun Uni</string><br />
+			<string>AR PL New Sung</string><br />
+			<string>AR PL UKai CN</string><br />
+			<string>AR PL ZenKai Uni</string><br />
+		</edit><br />
+	</match> </p>
+<p></fontconfig><br />
+</pre></p>

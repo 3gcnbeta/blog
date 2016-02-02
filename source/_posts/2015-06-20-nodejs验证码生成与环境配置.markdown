@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: ! 'nodejs验证码生成与环境配置'
+author:
+  display_name: 北漂IT民工
+author_email: calidion@gmail.com
+categories:
+tags: ['captcha', 'node', 'canvas']
+comments: []
+---
+
+
+首先安装系统：
+
+```sh
+
+sudo apt-get install libpangocairo-1.0-0 libcairo2-dev libgnomeui-dev libgstreamer0.10-dev libglib2.0-dev libjpeg-dev libgif-dev
+
+```
+
+然后再安装npm
+
+```sh
+
+npm install --save simple-captcha
+
+
+```
+
+
+```js
+
+
+var simpleCaptcha = require('simple-captcha');
+
+  captcha: function(req, res) {
+    var captcha = require('simple-captcha').create({width: 100, height: 40});
+    req.session.captcha = captcha.text();
+    console.log(req.session.captcha);
+    captcha.generate();
+    res.write(captcha.buffer('image/png'));
+    res.end();
+  }
+  
+
+```

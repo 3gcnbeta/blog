@@ -1,0 +1,41 @@
+---
+layout: post
+status: publish
+published: true
+title: 写了个脚本用于Linux下批量转化文件
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 159
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=159
+categories:
+- Linux
+tags:
+- Linux
+- shell
+comments: []
+---
+
+```shell
+for i in `find . -name "*.js"`
+
+do
+
+iconv -f gbk -t utf-8 $i > $i.new | mv $i.new $i
+
+done
+```
+
+注意事项：
+
+1。"*.js"是你所查找的文件正则。
+
+2。确保你所转化的文件的格式是一致的。
+
+3。-f是要转化的格式， -t是转化后的格式
+
+4。做好备份工作。因为这个代码转化后的文件会直接覆盖原文件

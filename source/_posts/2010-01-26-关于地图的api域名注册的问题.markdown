@@ -1,0 +1,48 @@
+---
+layout: post
+status: publish
+published: true
+title: 关于地图的api域名注册的问题
+author:
+  display_name: 北漂IT民工
+  login: admin
+  email: calidion@gmail.com
+  url: ''
+author_login: admin
+author_email: calidion@gmail.com
+wordpress_id: 300
+wordpress_url: http://www.3gcnbeta.com/wordpress/?p=300
+categories:
+- WEB开发
+tags:
+- Goolge Maps API
+comments: []
+---
+
+注册key时,不管是IP还是域名都可以。
+
+如果是域名，google官方的建议是用基域名。
+
+比如有：
+
+1. abc.domain.com
+
+2. eee.domain.com
+
+3. www.domain.com
+
+这些域名时，最好注册domain.com这个域名。
+
+这样所有的子域名就可以共用这个key.
+
+如果是用IP注册的域名，那就不存在基域名的问题，
+
+只需要将IP传入即可
+
+比如：202.106.0.20
+
+不要附带其它的任何信息。
+
+官方的解释说明：
+
+http://code.google.com/intl/zh-CN/apis/maps/faq.html#keysystem
