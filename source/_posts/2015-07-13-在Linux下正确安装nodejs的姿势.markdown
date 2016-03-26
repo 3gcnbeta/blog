@@ -2,12 +2,12 @@
 layout: post
 status: publish
 published: true
-title: ! '在Linux下正确安装node/iojs的姿势'
+title: ! '在Linux下正确安装nodejs的姿势'
 author:
   display_name: Admin
 author_email: calidion@gmail.com
 categories:
-tags: ['nodejs', 'nvm', 'linux', 'node', 'iojs']
+tags: ['nodejs', 'nvm', 'linux', 'nodejs']
 comments: []
 ---
 
