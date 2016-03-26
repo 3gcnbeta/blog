@@ -72,7 +72,9 @@ theme:  bootstrap-blog
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/calidion/calidion.github.io.git
+  message: Hexo Used
 
 # Comments
 duoshuo_shortname: 3gcnbeta
