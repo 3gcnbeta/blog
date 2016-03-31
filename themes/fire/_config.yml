@@ -1,0 +1,44 @@
+# Header
+navbar_brand: false
+menu:
+  home: 
+    url: index.html
+    title: 首页
+  archives:
+    url: archives/
+    title: 归档
+
+rss: /atom.xml
+
+# Content
+excerpt_link: 更多
+fancybox: false
+
+# Sidebar
+widgets:
+- about         # See also: `about_content`
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+about_widget_content: >
+#<img src="http://tp4.sinaimg.cn/2344087443/180/5622386331/1">
+#<p>关注IT技术的新闻，技术，感悟，交流，分享。</p>
+
+about:
+  title: 关于
+  logo: http://tp4.sinaimg.cn/2344087443/180/5622386331/1
+  desc: 关注IT技术的新闻，技术，感悟，交流，分享。
+
+# widget behavior
+archive_type: 'monthly'
+show_count: true
+
+# Miscellaneous
+google_analytics:
+favicon:
+twitter_id:
+google_plus:
+fb_admins:
+fb_app_id:

@@ -7,7 +7,7 @@ title: 北漂IT民工
 subtitle: 的博客
 description: 关注IT技术相关的新闻、技术、感悟、交流、分享
 author: 北漂IT民工
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -67,7 +67,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme:  bootstrap-blog
+theme:  fire
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -78,3 +78,7 @@ deploy:
 
 # Comments
 duoshuo_shortname: 3gcnbeta
+admin:
+  username: 北漂IT民工
+  password_hash: $2a$08$.KJ3jJd8lHEeDyko5OQFvuKOFfj1xz.Mcw6b8uBZXczARG5LEaavq
+  secret: some secret aaaa

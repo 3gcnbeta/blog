@@ -1,10 +1,9 @@
----
 layout: post
 status: publish
 published: true
 title: ! '在Linux下正确安装nodejs的姿势'
 author:
-  display_name: Admin
+  display_name: 北漂IT民工
 author_email: calidion@gmail.com
 categories:
 tags: ['nodejs', 'nvm', 'linux', 'nodejs']

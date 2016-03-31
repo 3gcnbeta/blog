@@ -1,0 +1,20 @@
+<footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      <script src="http://s133.cnzz.com/stat.php?id=1947534&web_id=1947534&show=pic1" language="JavaScript"></script>
+      <br/>
+      &copy;
+      <%= date(new Date(), 'YYYY') %>
+        <%= config.author || config.title %>
+          <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+  <script src="//cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//imk2.qiniudn.com/js/prettify.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('pre code').parent().addClass('prettyprint');
+      prettyPrint();
+    });
+  </script>
+</footer>
