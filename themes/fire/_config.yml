@@ -1,13 +1,19 @@
 # Header
 navbar_brand: false
 menu:
-  home: 
+  home:
     url: index.html
     title: 首页
   archives:
     url: archives/
     title: 归档
-
+#  projects:
+#    url: projects/
+#    title: 参与开源项目
+#  about:
+#    url: about/
+#    title: 民工相关
+#
 rss: /atom.xml
 
 # Content
@@ -22,9 +28,6 @@ widgets:
 - tagcloud
 - archive
 - recent_posts
-about_widget_content: >
-#<img src="http://tp4.sinaimg.cn/2344087443/180/5622386331/1">
-#<p>关注IT技术的新闻，技术，感悟，交流，分享。</p>
 
 about:
   title: 关于
@@ -36,9 +39,9 @@ archive_type: 'monthly'
 show_count: true
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-12680566-5
 favicon:
-twitter_id:
+twitter_id: htc3000
 google_plus:
 fb_admins:
 fb_app_id:

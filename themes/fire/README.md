@@ -1,50 +1,48 @@
-# hexo-theme-bootstrap-blog
+# hexo-theme-fire
 
-A simple [Bootstrap] v3 blog theme for [Hexo].
+基于[hexo-theme-bootstrap-blog](https://github.com/cgmartin/hexo-theme-fire.git)修改
 
-Based on the [official Bootstrap Blog example template](http://getbootstrap.com/examples/blog/).
+[示例](http://blog.3gcnbeta.com/)
 
-[Demo site](http://cgmartin.github.io/hexo-theme-bootstrap-blog/) | [More Information](https://cgmartin.com/2016/01/05/bootstrap-blog-hexo-theme/)
+## 安装指导
 
-## Setup Instructions
+### 安装
 
-### Install
+**要求Hexo 2.4以上**
 
-**This theme requires Hexo 2.4 and above.**
-
-1) Install theme:
+1) 下载主题到themes目录:
 
 ```bash
-$ git clone https://github.com/cgmartin/hexo-theme-bootstrap-blog.git themes/bootstrap-blog
+$ git clone https://github.com/cgmartin/hexo-theme-fire.git themes/fire
 ```
 
-2) (optional) Install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) for more Bootstrap tags (textcolors, buttons, labels, badges, etc.):
+2) (可选) 安装 [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap)可得到更多 Bootstrap 标签 (textcolors, buttons, labels, badges, etc.):
 
 ```bash
 $ npm install hexo-tag-bootstrap --save
 ```
 
-3) (optional) Install [hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome) for placing Font Awesome icons in your Markdown:
+3) (可选) 安装 [hexo-tag-fontawesome](https://github.com/akarzim/hexo-tag-fontawesome) 可以在你的Markdown文件里使用Font Awesome图标:
 
 ```bash
 $ npm install hexo-tag-fontawesome --save
 ```
 
-### Enable
+### 开启
 
-Modify the `theme` setting in `_config.yml` to `bootstrap-blog`.
+将hexo`_config.yml`文件的`theme`项目设置成为`fire`即可.
 
 ### Update
 
 ```bash
-cd themes/bootstrap-blog
+cd themes/fire
 git pull
 ```
 
 ## Configuration
 
 ```yml
-# File: themes/bootstrap-blog/_config.yml
+# File: themes/fire/_config.yml
 
 # Header
 navbar_brand: false
