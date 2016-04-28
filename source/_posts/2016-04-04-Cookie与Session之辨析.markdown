@@ -5,16 +5,20 @@ tags:
   - 服务器
   - Cookie
   - Session
-categories: ['Web技术']
-author:  
-	display_name:  北漂IT民工 
+categories:
+  - Web技术
+author:
+  display_name: 北漂IT民工
 date: 2016-04-04 17:28:00
 ---
+Cookie与Session是所有Web开发中最基本的概念，是用户认识用户验证最基本的手段。自从RESTful的概念提出来之后，不断有人提出削弱Cookie与Session进行身份认识的作用。尽管如此，Cookie与Session仍作为最基础的身份认识手段而被广泛的应用。
+
+所以在我们的Web开发中，Cookie与Session的区分是非常重要的。
 
 ### Cookie与Session目标接近，服务对象不同
 
-Cookie与Session是两个目的类似，但面对的对象有所差异的东西。
-特别是他们经常相互作用，实现各自的目标，因为有没有真正的理清理他们的实际意义与使用方式前，人们还是非常容易混淆他们之间的区别的。
+Cookie与Session是两个目的类似，但面向的对象有所差异的东西。
+特别是他们经常相互作用，从而实现各自的目标。因些在没有真正的理清楚他们的实际意义与使用方式前，人们还是非常容易混淆他们之间的区别的。本文从他们的实现方式入手，尝试将Cookie与Session的本质特征说清楚。
 
 Cookie的服务对象是：浏览器，用于记录浏览器端用户信息或者相应的状态
 Session的服务对象是：服务器，用于记录服务器端用户信息或者相应的状态
@@ -75,6 +79,3 @@ Cookie：jsessionid=D3223883123;
 上面讨论的是Cookie与Session的几个比较明显的不同点。
 
 相信通过比较上面的几个点，我们就可以很容易区分Cookie与Session了。
-
-
-
