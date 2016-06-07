@@ -30,7 +30,7 @@ $ npm install -g sinopia
 可以默认启动
 ```sh
 $ sinopia > /dev/null 2>&1
-``` 
+```
 也可以指定IP与端口
 ```sh
 $ sinopia -l 0.0.0.0:8080 > /dev/null 2>&1
