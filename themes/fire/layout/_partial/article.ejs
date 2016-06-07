@@ -32,23 +32,11 @@
 
     <% if (!(post.excerpt && index)){ %>
       <%- partial('post/gallery') %>
-        <% } %>
-
-          <footer class="article-footer">
-            <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">
-              <i class="fa fa-share"></i> 分享
-            </a>
-            <% if (post.comments && config.disqus_shortname){ %>
-              <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">
-                <i class="fa fa-comment"></i> 评论
-              </a>
-              <% } %>
-                <%- partial('post/tag') %>
-          </footer>
+    <% } %>
   </div>
   <% if (!index){ %>
     <%- partial('post/nav') %>
-      <% } %>
+  <% } %>
 </article>
 
 <% if (!index && post.comments && config.disqus_shortname){ %>
@@ -57,7 +45,7 @@
       <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </section>
-  <% } %>
+<% } %>
     <section class="comment">
       <div class="ds-thread"></div>
     </section>

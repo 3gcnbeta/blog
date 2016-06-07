@@ -1,46 +1,40 @@
 <% if (site.posts.length){ %>
-  <div class="sidebar-module">
-    <h4>最近更新</h4>
-    <ul class="sidebar-module-list">
-      <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
-        <li>
-          <a href="<%- url_for(post.path) %>" class="text-muted">
-            <%= post.title || '(no title)' %>
-          </a>
-        </li>
-        <% }) %>
-    </ul>
-  </div>
-  <% } %>
-  <div class="sidebar-module">
-    <h4 class="title">最新评论</h4>
-<!-- 多说最新评论 start -->
-<div class="ds-recent-comments" data-num-items="15" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
-<!-- 多说最新评论 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    var duoshuoQuery = {short_name:"3gcnbeta"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-  </div>
     <div class="sidebar-module">
-      <a style="text-align:center;height:80px;" target="_blank" href="http://www3.clustrmaps.com/counter/maps.php?url=http://3gcnbeta.com" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://3gcnbeta.com" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" />
-      </a>
-      <script type="text/javascript">
-        function cantload() {
-          img = document.getElementById("clustrMapsImg");
-          img.onerror = null;
-          img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
-          document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
-        }
-        img = document.getElementById("clustrMapsImg");
-        img.onerror = cantload;
-      </script>
+        <h4>最近更新</h4>
+        <ul class="sidebar-module-list">
+            <% site.posts.sort('date', -1).limit(10).each(function(post){ %>
+                <li>
+                    <a href="<%- url_for(post.path) %>" class="text-muted">
+                        <%= post.title || '(no title)' %>
+                    </a>
+                </li>
+                <% }) %>
+        </ul>
     </div>
+    <% } %>
+        <div class="sidebar-module">
+          <h4>微信公共号</h4>
+          <div>
+          本站最新资讯优先发布媒体<br/>
+          搜索：frontend-guru<br/>
+          或微信扫描二维码：<br/>
+          <img width="180px" src="http://res.cloudinary.com/dawjytvkn/image/upload/v1464858605/qrcode_for_gh_6f66da401fef_430_b1rr96.jpg" /><br/>
+          关注
+        </div>
+        </div>
+        <div>
+          <h4>访客足迹</h4>
+
+            <a style="text-align:center;height:80px;" target="_blank" href="http://www3.clustrmaps.com/counter/maps.php?url=http://3gcnbeta.com" id="clustrMapsLink"><img src="http://www3.clustrmaps.com/counter/index2.php?url=http://3gcnbeta.com" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" />
+            </a>
+            <script type="text/javascript">
+                function cantload() {
+                    img = document.getElementById("clustrMapsImg");
+                    img.onerror = null;
+                    img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
+                    document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
+                }
+                img = document.getElementById("clustrMapsImg");
+                img.onerror = cantload;
+            </script>
+        </div>
